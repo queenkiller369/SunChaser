@@ -1,0 +1,36 @@
+.media-card {
+    background-color:  rgba(20, 19, 19, 0.705);
+    padding-top:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background-image: url('./images/icon_video.png');
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 95%;
+    height:100%;
+}
+
+.media-photo-card{
+    background-image: url('./images/icon_photo.png');
+}
+
+.media-name{
+    font-weight: 600;
+}
+
+.media-button{
+    background-color: #FCCC00;
+    color: black;
+    font-size:10px;
+}
+
+.media-button:hover{
+    background-color: black;
+    color: #FCCC00;
+}
+
+.media-description{
+    color: lightgray;
+    font: size 12px;
+}

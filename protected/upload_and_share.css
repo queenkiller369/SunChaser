@@ -1,0 +1,398 @@
+/* css by CHiT */
+
+/* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+#map {
+    height: 400px;
+}
+
+
+
+/* css by CHiT */
+
+#navbar{
+    position: sticky;
+    z-index: 999999;
+    top: 0px;
+    opacity: 80%;
+    margin-bottom: 0px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-link{
+    color: #353535
+}
+
+.nav-link:visited{
+    color: #000000;
+    font-weight: 600;
+}
+
+
+.dropdown{
+    width: 160px;
+}
+
+.dropdown-toggle:visited {
+    background-color: #b57f1b65 !important;
+}
+
+.dropdown-item:visited{
+    background-color: #b57f1b65 !important;
+}
+
+.dropdown-item:hover{
+    background-color: #b57f1b65 !important;
+}
+
+.nav-pills li>a:hover,.nav-pills li>a:focus,.nav-pills li.active{
+    background-color: #b57f1b65 !important;
+}
+
+#navbar-example2{
+    background-color: rgba(255, 255, 255, 0.747) !important;
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+}
+
+.navbar .dropdown-menu{ 
+    right: 0; 
+    left: auto; 
+    background-color: rgba(255, 255, 255, 0.747) !important;
+}
+
+
+/* css by CHiT */
+
+#jumbotronDiv{
+    margin-top: 0px;
+    border-top: 0px;
+    position: relative;
+}
+
+#jumbotron-overlay{
+    position: absolute;
+    /* top: 28vw; */
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jumbo-carousel-superDiv{
+    position: relative;
+}
+
+
+@media only screen and (max-width: 369px){
+    #sign-in-box{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+    #jumbotron-overlay{
+        position: relative;
+    }
+    .sign-in-box-title{
+        font-size: 80% !important;
+        position: relative;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 800 !important;
+    }
+}
+
+@media only screen and (max-width: 459px) and (min-width: 370px) {
+    #sign-in-box{
+        width: 85%;
+        margin-bottom: 30px;
+    }
+    #jumbotron-overlay{
+        position: relative;
+    }
+
+
+}
+
+@media only screen and (max-width: 769px) and (min-width: 460px) {
+    #sign-in-box{
+        width: 65%;
+        margin-bottom: 30px;
+    }
+    #jumbotron-overlay{
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 844px) and (min-width: 770px) {
+    #sign-in-box{
+        width: 45%;
+        margin-bottom: 30px;
+    }
+    #jumbotron-overlay{
+        position: relative;
+    }
+
+}
+
+@media only screen and (max-width: 999px) and (min-width: 845px) {
+    #sign-in-box{
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #sign-in-box{
+        width: 30%;
+    }
+}
+
+.modal-dialog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jumbotron-msg-box{
+    background-color: rgba(255, 255, 255, 0.616);
+    border-radius: 20px;
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* css by CHiT */
+
+
+#sign-in-box {
+    background-color: rgba(255, 255, 255, 0.89);
+    border-radius: 20px;
+    z-index: 15;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign-in-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sign-in-box-title {
+    font-size: 100%;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800 !important;
+  }
+  
+  #sign-in-box-sign-in {
+    font-size: 90%;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600 !important;
+  }
+  
+  #sign-in-box-question-acc {
+    margin-top: 5px;
+    font-size: 70%;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: flex-start !important;
+  }
+  
+  #error-message {
+    font-size: 90%;
+    margin-top: 5px;
+  }
+  
+  #accSuccess-message {
+    font-size: 90%;
+  }
+  
+  #create-acc-button {
+    color: #5a6268 !important;
+  }
+  
+  #create-acc-button:hover {
+    color: #ffffff !important;
+  }
+  
+  .form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 5%;
+    font-size: 80%;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 5%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .sign-in-button {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 5%;
+    font-size: 80%;
+  }
+  
+  .logged-in-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80%;
+  }
+
+  .modal{
+    z-index: 9999999;
+  }
+  
+  .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+/* css by CHiT */
+
+.huge-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+#create-user-form{
+    margin-top: 20px;
+}
+
+.reg-image-bar{
+    min-height: 180px;
+    background-image: url("../sunrise&sunset-pic/AP-S01.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    display: flex;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px #000000;
+} 
+
+.reg-form-big-column{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.425);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.reg-form-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.reg-from-title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+
+.reg-form-submit-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fa-envelope{
+    height:28px;
+    width:28px;
+}
+
+.check-date-message-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* css by CHiT */
+
+.weather-condition {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 90%;
+    font-family: 'Noto Sans HK', sans-serif;
+  }
+  

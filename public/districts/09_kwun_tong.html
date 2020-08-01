@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<!-- html by CHiT -->
+<html>
+<title>SUN-CHASER HONG KONG</title>
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="districts.css" />
+    <link href="jquery.datetimepicker.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../media-card.css" />
+</head>
+
+<body onload='main();'>
+  <!-- <body onload='initMap();'> -->
+    <nav id="navbar" class="navbar navbar-light bg-light container-fluid">
+      <a class="navbar-brand" href="/index.html"><img src="/icons/Logo.svg" alt="UserImg" class="image-fluid"
+        height="40px"></a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#map">MAP</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">MORE</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" data-toggle="modal" data-target="#exampleModal">Sign in / Sign up</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/profile.html">Profile</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/photo_gallery.html">Photo Gallery</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/upload_and_share.html">Add Photo</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/logout">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div id="sign-in-box" class="shadow-lg modal-content col-sm-8">
+        <form class="form-signin" action="/loginWeb" method="POST" id="sign-in-from">
+          <img class="mb-2 sign-in-logo" src="../icons/Logo.svg" alt="" width="72" height="72">
+          <!-- <div class="sign-in-box-title">SUN-CHASER HK</div> -->
+          <div class="mb-1 sign-in-box-title">SUN-CHASER HONG KONG</div>
+          <!-- <div class="mb-3" id="sign-in-box-sign-in">Sign In</div> -->
+  
+          <input type='text' name="email" id="inputEmail" class="form-control" placeholder="Email Address" required
+            autofocus>
+          <label for="inputEmail" class="sr-only">Email address</label>
+  
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password"
+            required>
+  
+          <input type='submit' class="btn btn-lg btn-success btn-block sign-in-button" id="sign-in-button"
+            value="Sign in" />
+          <a href="/connect/google/" class="btn btn-lg btn-secondary btn-block sign-in-button"
+            id="sign-in-with-google-button"><img src="../icons/google-icon.svg" width="20"
+              height="20">&#160;&#160;&#160;Sign in with Google</a>
+  
+          <div id="error-message" class="col-sm-12"></div>
+          <div id="accSuccess-message" class="col-sm-12"></div>
+  
+          <div class="col-sm-12" id="sign-in-box-question-acc">Don't have an Account?</div>
+          <a href="/signup.html" id="create-acc-button" class="btn btn-sm btn-outline-secondary btn-block">CREATE
+            ACCOUNT</a>
+        </form>
+  
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid district-title">
+    KWUN TONG 觀塘區
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <h4></h4>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="map01" class="spaceDivB4SectionTitle"></div>
+        <div id="map"></div>
+
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6vVbsqJ3TAbxGDuXyvczxjrORhfSlgHQ&callback=initMap">
+          </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid recent-photo-header" id="gallery">
+    <h1>Gallery</h1>
+
+  </div>
+  <div class="container-fluid">
+    <div class="row recent-photo" id="recent-photos-container"></div>
+  </div>
+  <div id="modal-container">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content" id="modal-content">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
+    <!-- Latest compiled and minified Jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Popper: Use for pop up bubble -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <!-- datepicker -->
+     <script src="/path/to/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+    <!-- bootstrap time picker -->
+    <script src="plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bootstrap.timepicker/0.2.6/js/bootstrap-timepicker.min.js"></script>
+
+    <script src="jquery.datetimepicker.full.min.js"></script>
+
+    <script type="text/javascript" src="js/09_kwun_tong.js"></script>
+    <script type="text/javascript" src="../js/loadSession.js"></script>
+    <script type="text/javascript" src="js/loadDistrictPhoto.js"></script>
+
+</body>
+
+
+</html>

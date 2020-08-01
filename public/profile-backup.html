@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<!-- html by CHiT -->
+<html>
+  <title>SUN-CHASER HONG KONG</title>
+
+  <head>
+    <meta charset="uft-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+
+  <body>
+    <nav id="navbar" class="navbar navbar-light bg-light container-fluid">
+      <a class="navbar-brand" href="index.html"
+        ><img
+          src="icons/Logo.svg"
+          alt="UserImg"
+          class="image-fluid"
+          height="40px"
+      /></a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#map01">MAP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">GALLERY</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-haspopup="true"
+            aria-expanded="false"
+            >MORE</a
+          >
+          <div class="dropdown-menu">
+            <a
+              class="dropdown-item"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              >Sign in / Sign up</a
+            >
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/profile.html">Profile</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/photogallery.html">Photo Gallery</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/takephoto.html">Take Photo</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/upload.html">Upload & Share</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="/logout">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="container">
+      <div class="row">
+        <h4></h4>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div id="profile-pic">
+            <img src="./uploads/sunset.jpg" class="image-fluid user-photo" />
+          </div>
+        </div>
+        <div class="col-sm-8">
+          <div>name</div>
+          <div>personal info</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- html by tony -->
+    <div class="container-fluid" id="recent-photos">
+      <div class="recent-photo-header" id="gallery">
+        
+      </div>
+      <div class="row recent-photo" id="my-photo-container">
+        <div class="col col-sm-4">
+          <div>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter ">
+            Launch demo modal
+          </button> -->
+            <img
+              src="./uploads/sunset.jpg"
+              class="image-fluid user-photo"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            />
+          </div>
+          <div class="time-comment-likes">
+            <div class="col-3">
+              <h4>Time:</h4>
+            </div>
+
+            <div class="col-4 comment-likes">
+              <a>
+                <img src="./icons/heart-solid.svg" class="icon-bubble" />
+              </a>
+              <h5>5</h5>
+              <a>
+                <img src="./icons/comment-regular.svg" class="icon-bubble" />
+              </a>
+              <h5>6</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4">
+          <div>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter ">
+            Launch demo modal
+          </button> -->
+            <img
+              src="./uploads/sunset.jpg"
+              class="image-fluid user-photo"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            />
+          </div>
+          <div class="time-comment-likes">
+            <div class="col-3">
+              <h4>Time:</h4>
+            </div>
+
+            <div class="col-4 comment-likes">
+              <a>
+                <img src="./icons/heart-solid.svg" class="icon-bubble" />
+              </a>
+              <h5>5</h5>
+              <a>
+                <img src="./icons/comment-regular.svg" class="icon-bubble" />
+              </a>
+              <h5>6</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4">
+          <div>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter ">
+            Launch demo modal
+          </button> -->
+            <img
+              src="./uploads/sunset.jpg"
+              class="image-fluid user-photo"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            />
+          </div>
+          <div class="time-comment-likes">
+            <div class="col-3">
+              <h4>Time:</h4>
+            </div>
+
+            <div class="col-4 comment-likes">
+              <a>
+                <img src="./icons/heart-solid.svg" class="icon-bubble" />
+              </a>
+              <h5>5</h5>
+              <a>
+                <img src="./icons/comment-regular.svg" class="icon-bubble" />
+              </a>
+              <h5>6</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4">
+          <div>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter ">
+            Launch demo modal
+          </button> -->
+            <img
+              src="./uploads/sunset.jpg"
+              class="image-fluid user-photo"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            />
+          </div>
+          <div class="time-comment-likes">
+            <div class="col-3">
+              <h4>Time:</h4>
+            </div>
+
+            <div class="col-4 comment-likes">
+              <a>
+                <img src="./icons/heart-solid.svg" class="icon-bubble" />
+              </a>
+              <h5>5</h5>
+              <a>
+                <img src="./icons/comment-regular.svg" class="icon-bubble" />
+              </a>
+              <h5>6</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col col-sm-4">
+          <div>
+            <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter ">
+            Launch demo modal
+          </button> -->
+            <img
+              src="./uploads/sunset.jpg"
+              class="image-fluid user-photo"
+              data-toggle="modal"
+              data-target="#exampleModalCenter"
+            />
+          </div>
+          <div class="time-comment-likes">
+            <div class="col-3">
+              <h4>Time:</h4>
+            </div>
+
+            <div class="col-4 comment-likes">
+              <a>
+                <img src="./icons/heart-solid.svg" class="icon-bubble" />
+              </a>
+              <h5>5</h5>
+              <a>
+                <img src="./icons/comment-regular.svg" class="icon-bubble" />
+              </a>
+              <h5>6</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-lg modal-dialog-centered"
+            role="document"
+          >
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Title</h5>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <img
+                        src="./sunrise&sunset-pic/S01.jpg"
+                        class="img-fluid"
+                        alt="Sunrise"
+                      />
+                </div>
+                <div class="col-4 comment-likes-user-photo">
+                  <a>
+                    <img src="../icons/heart-solid.svg" class="icon-bubble" />
+                  </a>
+                  <h5>5</h5>
+                  <a>
+                    <img
+                      src="../icons/comment-regular.svg"
+                      class="icon-bubble"
+                    />
+                  </a>
+                  <h5>6</h5>
+                </div>
+
+                <ul class="photo-details">
+                  <h6>Description</h6>
+                  <h6>District</h6>
+                  <h6>Location</h6>
+                  <h6>Date & Time</h6>
+                  <h6>Photograph by Username</h6>
+                  <h6>Comments</h6>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <a href="./example.png"></a>
+    </div>
+
+    <!-- Latest compiled and minified Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest compiled and minified Popper: Use for pop up bubble -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="./js/profile.js"></script>
+  </body>
+</html>

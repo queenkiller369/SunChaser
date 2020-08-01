@@ -1,0 +1,502 @@
+/* css by CHiT */
+
+/* Always set the map height explicitly to define the size of the div
+     * element that contains the map. */
+/* #map {
+    height: 500px;
+} */
+
+/* css by CHiT */
+
+body{
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+#navbar {
+  position: sticky;
+  z-index: 999999;
+  top: 0px;
+  opacity: 80%;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: #353535;
+}
+
+.nav-link:visited {
+  color: #000000;
+  font-weight: 600;
+}
+
+.dropdown {
+  width: 160px;
+}
+
+.dropdown-toggle:visited {
+  background-color: #b57f1b65 !important;
+}
+
+.dropdown-item:visited {
+  background-color: #b57f1b65 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #b57f1b65 !important;
+}
+
+.nav-pills li > a:hover,
+.nav-pills li > a:focus,
+.nav-pills li.active {
+  background-color: #b57f1b65 !important;
+}
+
+#navbar-example2 {
+  background-color: rgba(255, 255, 255, 0.747) !important;
+  position: sticky;
+  top: 0px;
+  z-index: 10000;
+}
+
+.navbar .dropdown-menu {
+  right: 0;
+  left: auto;
+  background-color: rgba(255, 255, 255, 0.747) !important;
+}
+
+/* css by CHiT */
+
+#jumbotronDiv {
+  margin-top: 0px;
+  border-top: 0px;
+  position: relative;
+}
+
+#jumbotron-overlay {
+  position: absolute;
+  /* top: 28vw; */
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbo-carousel-superDiv {
+  position: relative;
+}
+
+@media only screen and (max-width: 369px) {
+  #sign-in-box {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  #jumbotron-overlay {
+    position: relative;
+  }
+  .sign-in-box-title {
+    font-size: 80% !important;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800 !important;
+  }
+  #map {
+    height: 500px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 459px) and (min-width: 370px) {
+  #sign-in-box {
+    width: 85%;
+    margin-bottom: 30px;
+  }
+  #jumbotron-overlay {
+    position: relative;
+  }
+  #map {
+    height: 500px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 769px) and (min-width: 460px) {
+  #sign-in-box {
+    width: 65%;
+    margin-bottom: 30px;
+  }
+  #jumbotron-overlay {
+    position: relative;
+  }
+  #map {
+    height: 500px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 844px) and (min-width: 770px) {
+  #sign-in-box {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+  #jumbotron-overlay {
+    position: relative;
+  }
+  #map {
+    height: 500px !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 999px) and (min-width: 845px) {
+  #sign-in-box {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #sign-in-box {
+    width: 30%;
+  }
+}
+
+.modal{
+  z-index: 9999999;
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#jumbotron-msg-box {
+  background-color: rgba(255, 255, 255, 0.616);
+  border-radius: 20px;
+  z-index: 10;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-in-box {
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 20px;
+  z-index: 15;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-box-title {
+  font-size: 100%;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800 !important;
+}
+
+#sign-in-box-sign-in {
+  font-size: 90%;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600 !important;
+}
+
+#sign-in-box-question-acc {
+  margin-top: 5px;
+  font-size: 70%;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: flex-start !important;
+}
+
+#error-message {
+  font-size: 90%;
+  margin-top: 5px;
+}
+
+#accSuccess-message {
+  font-size: 90%;
+}
+
+#create-acc-button {
+  color: #5a6268 !important;
+}
+
+#create-acc-button:hover {
+  color: #ffffff !important;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 5%;
+  font-size: 80%;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 5%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.sign-in-button {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 5%;
+  font-size: 80%;
+}
+
+.spaceDivB4SectionTitle {
+  height: 66px;
+}
+
+.weather-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0px;
+  line-height: 0.8;
+  margin-bottom: 0px;
+}
+
+.weather-condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 95%;
+  font-family: 'Noto Sans HK', sans-serif;
+}
+
+.logged-in-msg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+}
+
+.mapMarkerPhotoFromUser{
+  max-height: 300%;
+  width: 100%;
+}
+
+.like-container{
+  margin: 0px;
+  padding: 0px;
+}
+
+.photo-time-div{
+  font-size: 100%;
+}
+
+
+.comment-likes-div{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.total-comment-like-number{
+  font-size: 150%;
+  margin-right: 3px;
+}
+
+.like-icon-and-number{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.comment-icon-and-number{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.photo-card-username-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+
+
+/* css by tony */
+
+  .photo-overlay{
+      /* 即overlay要係喺frame 的center 位置 用overlay 包住張相*/
+      background-color: #00000052;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+  }
+
+  .photo-frame{
+      /* 用div 整個frame出黎 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding-top: 66.66%;  
+     /* 3:2 display ratio */
+  }
+
+ 
+
+.recent-photo{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 100px;
+  
+}
+
+.photo-card{
+  margin-bottom: 50px;;
+}
+
+.recent-photo-header {
+  display: flex;
+ 
+  margin-top: 60px;
+}
+
+.sort-by{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header{
+  display:flex;
+  justify-content: center;
+}
+
+.icon-bubble {
+  height: auto;
+  width: 30px;
+  padding: 5px;
+  color: #fccc00 !important;
+  display: flex;
+  margin-left: 5px;
+}
+
+.time-comment-likes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.comment-likes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.photo-details {
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+
+.comment-likes-user-photo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: -20px;
+}
+
+.user-photo{
+  /* 張相ge height 或width 最多去到overlay 的100 %  */
+display: flex;
+flex-direction: column;
+max-height: 100%;
+max-width: 100%;
+}
+
+.username{
+  display:flex;
+  justify-content: flex-start;
+  margin-left: 50px;
+  margin-top:40px;
+}
+
+.username-photo-header{
+  display:flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.username-photo{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 50px;
+}
